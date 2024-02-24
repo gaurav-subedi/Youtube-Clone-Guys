@@ -1,0 +1,120 @@
+.youtube-clone{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+@media(max-width: 1230px){
+  .youtube-clone{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(min-width: 1500px){
+  .youtube-clone{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+}
+.thumbnail-1{
+  width: 100%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.whole-info{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+}
+.profile-picture{
+  width: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+}
+.video-info{
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 7px;
+}
+.video-title{
+  font-style: Arial;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  width: fit-content;
+
+}
+.brazil{
+  font-size: 9px;
+  font-weight: 800;
+}
+.author{
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 0.847);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.video-views{
+  margin-top:2px;
+  color: rgba(255, 255, 255, 0.847);
+  font-size: 13px;
+  width: fit-content;
+}
+.video-time{
+  margin-top: 2px;
+  width: fit-content;
+
+}
+.Live{
+  font-size: 12px;
+  font-family: Roboto, Arial;
+  background-color: rgba(255, 0, 0, 0.658);
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 2px;
+  width: fit-content;
+
+}
+.verified-lpgo{
+  width: 14px;
+  padding-left: 5px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+:where(.thumbnail-1,.verified-lpgo,.author,.video-title,.profile-picture):hover{
+  opacity: 0.5;
+}
+:where(.thumbnail-1,.verified-lpgo,.author,.video-title,.profile-picture):active{
+opacity: 1;
+}
+.video-thumbnail{
+  position: relative;
+}
+.video-time{
+  font-size: 13px;
+  position: absolute;
+  bottom: 13px;
+  right: 8px;
+  background-color: black;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
