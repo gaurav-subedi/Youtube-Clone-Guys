@@ -2,19 +2,9 @@
     margin-top: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
     column-gap: 30px;
     row-gap: 50px;
-}
-@media(max-width: 1230px){
-  .youtube-clone{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media(min-width: 1500px){
-  .youtube-clone{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
 }
 .thumbnail-1{
   width: 100%;
